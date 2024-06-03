@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+</head>
+<body>
+
+<h1>Exercise 1</h1>
+    <form>
+        <h2>Thanh toán</h2>
+        <div>
+            <label for="ten">Tên đầy đủ</label>
+            <input required id="ten" name="ten" type="text" placeholder="Nhập tên đầy đủ người mua hàng">
+        </div>
+        <div>
+            <label for="mk">Password</label>
+            <input required id="mk" name="mk" type="password" placeholder="Nhập password">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input required id="email" name="email" type="email" placeholder="Nhập email">
+        </div>
+        <div>
+            <label for="dob">Ngày sinh</label>
+            <input required id="dob" type="date">
+        </div>
+        <div>
+            <label for="product">Mặt hàng mua</label>
+            <input list="products" name="product" id="product">
+            <datalist id="products">
+                <option>Shoes</option>
+                <option>Socks</option>
+                <option>Shirt</option>
+                <option>Sandals</option>
+                <option>Trousers</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="quantity">Số lượng mua</label>
+            <input id="quantity" name="quantity" type="number" min="1" max="5">
+        </div>
+        <div>
+            <label for="bankinh">Bán kính vận chuyển</label>
+            <input id="bankinh" name="bankinh" type="range" min="10" max="20">
+        </div>
+    </form>
+
+<hr>
+<h1>Exercise 2</h1>
+    <h2>Embed video code</h2>
+    <video width="800" height="500" controls autoplay muted>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+    </video>
+    <br>
+    <audio controls>
+        <source src="/Picture/file_example_MP3_2MG.mp3">
+    </audio>
+
+<hr>
+<h1>Exercise 3</h1>
+
+<h2>Application for permission to date my daughter</h2>
+<p><strong>Note:</strong>Form is to be completed at least 21 days prior to date</p>
+<form>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <p>
+            <label for = "fullname">Name:</label>
+            <input id = "fullname" name="name" type = "text" placeholder="Enter your name"  autofocus required size="50">
+        </p>
+        <p>
+            <label for = "address">Address:</label>
+            <input id = "address" name="address" type = "text" placeholder="Enter address here">
+        </p>
+        <p>
+            <label for = "email3"><E-mail>E-mail:</label>
+            <input id = "email3" name="email3" type = "email" placeholder="Enter email here" size="50">
+        </p>
+        <p>
+            <label for = "phone">Phone number:</label>
+            <input id = "phone" name="phone" type = "tel" placeholder="Enter 10 digit number">
+        </p>
+        <p>
+            <label for = "iq">IQ:</label>
+            <input id = "iq" type = "number"placeholder="Enter IQ here">
+        </p>
+        <p>
+            <label>Gender</label><br>
+            <input type = "radio" name = "gender" id ="female"/> <label for="female">Female</label><br>
+            <input type = "radio" name = "gender" id = "male"/> <label for="male">Male</label><br>
+            <input type = "radio" name = "gender" id = "other"/> <label for="other">Other</label><br>
+        </p>
+        <p>
+            <label for="date">Date of Proposed Outing:</label>
+            <input id = "date" type = "date">
+        </p>
+    </fieldset>
+    <fieldset>
+        <p>
+            <label>Check All That Apply</label></br>
+            <input type = "checkbox" name="op1" id="op1"/> <label for="op1">I have tatoos and/or piercings</label></br>
+            <input type = "checkbox" name="op2" id="op2"/> <label for ="op2">I am more than 2 years older than my daughter</label></br>
+            <input type = "checkbox" name="op3" id="op3"/> <label for ="op3">I own a panel van or V8 ute</label></br>
+            <input type = "checkbox" name="op4" id="op4" checked/> <label for ="op4">I work full-time</label></br>
+            <input type = "checkbox" name="op5" id="op5" checked/> <label for ="op5">My parent are rich</label></br>
+            <input type = "checkbox" name="op6" id="op6" checked/> <label for ="op6">Is the date at a well lit pulic location</label>
+        </p>
+    </fieldset>
+    <fieldset>
+        <label for = "political">Political Persuasion:</label>
+        <select id="political">
+            <option>Left Wing</option>
+            <option>Right Wing</option>
+            <option>Conservative</option>
+            <option>Nazi</option>
+        </select>
+
+        <label for = "edu">Education Level Completed:</label>
+        <select id="edu">
+            <option>University</option>
+            <option>College</option>
+            <option>High school</option>
+            <option>None</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Essay Section</legend>
+        <div>
+            <label for="whydate">In 50 words or more explain why you want to date my daughter</label><br>
+            <textarea id="whydate" rows="5" cols="55">Enter Text Here</textarea>
+        </div>
+        
+        <div>
+            <label for="contact">Please upload contact details for 2 references</label><br>
+            <textarea id="contact" rows="5" cols="55">Enter Text Here</textarea>
+        </div>
+        <p>
+            Upload Police Clearance Certificate, Bank Statement and Medical Certificates here:
+            <input type="file">
+        </p>
+    </fieldset>
+    <button type="Submit">Send your application</button>
+</form>
+    
+</body>
+</html>

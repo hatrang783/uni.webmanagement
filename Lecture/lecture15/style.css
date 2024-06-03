@@ -1,0 +1,35 @@
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+/* header {
+    padding: 12px 0;
+} */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+}
+
+header ul li {
+    display: inline;
+    margin-left: 41px;
+    font-size: 13px;
+}
+
+#slogan {
+    background-image: url("images/Greek.jpg");
+}
+
+#slogan .container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 600px;
+}
+
+#slogan .container .center {
+    text-align: center;
+}

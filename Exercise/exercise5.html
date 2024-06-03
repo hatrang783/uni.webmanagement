@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise for Lecture 5</title>
+</head>
+<body>
+
+<h1>Exercise 1</h1>
+<table>
+    <thead>
+        <tr>
+            <th style="width:500px">Item Photo</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td >
+                <img width="200" height="200"
+                src="..\Picture\6bcbe10420ae10b82b550b3d4adeb13e.jpg">
+            </td>
+            <td>Orange</td>
+            <td>$1 ea.</td>
+        </tr>
+        <tr>
+            <td>
+                <img width="200" height="200"
+                src="..\Picture\6bcbe10420ae10b82b550b3d4adeb13e.jpg">
+            </td>
+            <td>Orange</td>
+            <td>$1 ea.</td>
+        </tr>
+        <tr>
+            <td>
+                <img width="200" height="200"
+                src="..\Picture\6bcbe10420ae10b82b550b3d4adeb13e.jpg">
+            </td>
+            <td>Orange</td>
+            <td>$1 ea.</td>
+        </tr>
+        <tr>
+            <td>
+                <img width="200" height="200"
+                src="..\Picture\6bcbe10420ae10b82b550b3d4adeb13e.jpg">
+            </td>
+            <td>Orange</td>
+            <td>$1 ea.</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+<h1>Exercise 2</h1>
+<form>
+    <h1>A Simple Form</h1>
+    <h2>Form fundamental</h2>
+
+    <fieldset>
+        <legend>Customer Info</legend>
+        <p>
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name here">
+        </p>
+        <p>
+            <label for="phone">Telephone:</label>
+            <input id="phone" name="phone" type="tel" placeholder="Enter your telephone number here">
+        </p>
+        <p>
+            <label for="email">E-mail address:</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email here">
+        </p>
+        <p>
+            <label>Gender</label>
+            <input name="gender" type="radio" id="fem">
+                <label for="fem">Female</label>
+            <input name="gender" type="radio" id="mal">
+                <label for="mal">Male</label>
+        </p>
+        <p>
+            <label>Hobbies:</label>
+            <input name="hobby" type="checkbox" >Basketball
+            <input name="hobby" type="checkbox" >Football
+            <input name="hobby" type="checkbox" >Badminton
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Books</legend>
+        <p>
+            <label for="book_name">Name:</label>
+            <input id="book_name" name="book_name" type="text">
+
+            <label for="quantity">Quantity (Maximun 5):</label>
+            <input id="quantity" name="quantity" type="number" min="1" max="5">
+        </p>
+    </fieldset>
+
+    <button>Submit</button>
+    <button>Reset</button>
+</form>
+
+<hr>
+<h1>Exercise 3</h1>
+<form>
+    <h1>Travel reservation form</h1>
+    <h2>* denotes mandatory</h2>
+
+    <div>
+        <label for="fullname">Full name*:</label><br>
+        <input required id="fullname" name="fullname" type="text" placeholder="FirstName LastName">
+    </div>
+    <div>
+        <label for="email">Email address*:</label><br>
+        <input required id="email" name="email" type="email">
+    </div>
+    <div>
+        <label for="package">Select Tour Package*:</label><br>
+        <select required id="package">
+            <option>Goa</option>
+            <option>Goa1</option>
+            <option>Goa2</option>
+        </select>
+    </div>
+    <div>
+        <label for="arrival">Arrival date*:</label><br>
+        <input required id="arrival" type="date">
+    </div>
+    <div>
+        <label for="num_people">Number of persons*:</label><br>
+        <input required id="num_people" type="number">
+    </div>
+    <div>
+        <label>What would you want to avail?*</label><br>
+        <input name="avail" type="checkbox" id="board">
+            <label for="board">Boarding</label><br>
+        <input name="avail" type="checkbox" id="fooding">
+            <label for="fooding">Fooding</label><br>
+        <input name="avail" type="checkbox" id="sightseeing">
+            <label for="sightseeing">Sight seeing</label>
+    </div>
+    <div>
+        <label for="coupon">Discount Coupon code:</label><br>
+        <input id="coupon" name="coupon" type="text">
+    </div>
+    <div>
+        <label>Terms and conditions*</label>
+        <input name="term" type="radio" id="agree">
+            <label for="agree">I agree</label>
+        <input name="term" type="radio" id="disagree">
+            <label for="disagree">I disagree</label>
+    </div>
+    <button>Complete</button>
+</form>
+
+<hr>
+<h1>Exercise 4</h1>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>Hà Nội</td>
+            <td rowspan="2">HCM</td>
+            <td>Đà Nẵng</td>
+            <td>Huế</td>
+        </tr>
+        <tr>
+            <td>Vũng Tàu</td>
+            <td colspan="2">Cà Mau</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+<h1>Exercise 5</h1>
+<form>
+    <h3>Simple form with name and age</h3>
+
+    <div>
+        <label for="name5">Name:</label>
+        <input id="name5" name="name" type="text">
+    </div>
+    <div>
+        <label for="age5">Age:</label>
+        <input id="age5" name="age" type="number">
+        <button>Add</button>
+    </div>
+
+    <h3>Current data in the system...</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><button><a href="https://google.com" target="_blank">Delete</a></button></td>
+                <td>John</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td><button><a href="https://google.com" target="_blank">Delete</a></button></td>
+                <td>John</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td><button><a href="https://google.com" target="_blank">Delete</a></button></td>
+                <td>John</td>
+                <td>23</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        <button><a href="https://google.com" target="_blank">Click here</a></button>
+        to create a Table and some data using Javascript
+    </p>
+
+</form>
+
+</body>
+</html>

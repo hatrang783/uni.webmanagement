@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lecture 3</title>
+</head>
+<body>
+
+<h1>HTML</h1>
+
+<p>Contents
+    <ul>
+        <li><a href="#section1">HTML Document Structure and Markup Basics</a></li>
+        <li><a href="#section2">HTML Doctypes and Templates</a></li>
+        <li><a href="#section3">HTML Elements</a></li>
+        <li><a href="#section4">HTML Development Process</a></li>
+    </ul>
+</p>
+
+<hr>
+<!-- ------------------------------------ -->
+<H2 id="section1">HTML Document Structure and Markup Basics</H2>
+<dfn>HTML: Hyper Text Markup Language </dfn>
+<P><strong>HTML Elements</strong> begins with a start tag, usually finishes with an end tag
+    <br>They should be self-closed
+    <br>Elements are either block-level or inline elements 
+</P>
+<p><strong>Void/ Empty elements</strong> have no content and no end tag.
+    <br>Do not add end tag to void/empty elements
+</p>
+<p><strong>White space characters</strong> like “spaces”, “tabs”, and “line breaks” 
+    <strong>do not affect</strong> the way content is presented </p>
+<p>This '     ' has 5 spaces but <strong>HTML doesnt understand</strong>
+    <br>So I have to use 5 <em>&amp;nbsp;</em> which is a character entity to display '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+</p>
+
+<hr>
+<!-- ------------------------------------ -->
+<h2 id="section2">HTML Doctypes and Templates</h2>
+
+<hr>
+<!-- ------------------------------------ -->
+<h2 id="section3">HTML Elements</h2>
+    <h3>Comments</h3>
+    <h3>Heading and Paragraph</h3>
+        <p>Below is a quote from Google using blockquote element with cite attribute:</p>
+            <blockquote cite="http://www.google.com.vn">
+                Search Google or type a URL
+            </blockquote>
+        <pre>This '     ' has 5 spaces
+            Because I'm using Preformatted Text tag: &lt;pre&gt;
+        </pre>
+    <h3>Phrase Tags and Scpecial Characters</h3>
+    <table border="1">
+        <caption>Phrase Tags</caption>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Display</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;em&gt;</td>
+                <td><em>Define emphasized text</em></td>
+            </tr>
+            <tr>
+                <td>&lt;strong&gt;</td>
+                <td><strong>Define important text</strong></td>
+            </tr>
+            <tr>
+                <td>&lt;dfn&gt;</td>
+                <td><dfn>Define a definition term</dfn></td>
+            </tr>
+            <tr>
+                <td>&lt;code&gt;</td>
+                <td><code>print("Define a piece of computer code")</code></td>
+            </tr>
+            <tr>
+                <td>&lt;samp&gt;</td>
+                <td><samp>Define sample output from a computer program</em></td>
+            </tr>
+            <tr>
+                <td>&lt;kbd&gt;</td>
+                <td><kbd>Define keyboard code</kbd></td>
+            </tr>
+            <tr>
+                <td>&lt;var&gt;</td>
+                <td>Define a variable: <var>x</var>, <var>y</var></td>
+            </tr>
+            <tr>
+                <td>&lt;sup&gt;</td>
+                <td>Superscript: (<var>x</var> + <var>y</var>)<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td>&lt;sub&gt;</td>
+                <td>Subscript: H<sub>2</sub>O</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Table foot</th>
+                <td>Table foot</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <h3>Lists and Table</h3>
+        <ol>
+            <li>First ordered item</li>
+            <li>Second ordered item
+                <ul>
+                    <li>First unordered sub-item
+                        <ul>
+                            <li>sub-sub-item
+                                <ul><li>sub-sub-sub-item :)))</li></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Second unordered sub-item</li>
+                    <li>Third unordered sub-item</li>
+                </ul>
+            </li>
+            <li>Third ordered item</li>
+        </ol>
+
+        <h4>Definition List</h4>
+        <dl>
+            <dt>Item 1</dt>
+            <dd>Describe 1</dd>
+            <dt>Item 2</dt>
+            <dd>Describe 2</dd>
+        </dl>
+
+    <h3>Anchor and Image</h3>
+    <p>Absolute path:
+        <li><a href="http://www.google.com.vn" target="_blank">Google with target "_blank"</a></li>
+        <li><a href="http://www.google.com.vn" target="_self">Google with target "_self" (default)</a></li>
+    </p>
+    <p>Relative path:
+        <li><a href="../Exercise/lecture3.html" target="_blank">Relative path to Excercise of lecture 3</a></li>
+    </p> 
+    <p>Within a web page:
+        <li><a href="#section1">Go to Section 1: HTML Document Structure and Markup Basics</a></li>
+    </p> 
+    <p>Click <a href="mailto:21070239.vnu.edu.vn">here</a> to contact me via email</p>
+    <p>Click <a href="..\Exercise\Exercise-W3_NguyenHaTrang_21070239.docx">here</a> to download Exercise-W3_NguyenHaTrang_21070239.docx</p>
+
+    <p>A picture as a link:</p>
+    <a href="http://www.google.com.vn" target="_blank">
+        <img src="data:image/jpeg;base64,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"
+            alt="A picture">
+    </a>
+
+
+
+<hr>
+<!-- ------------------------------------ -->
+<h2 id="section4">HTML Development Process</h2>
+
+</body>
+</html>

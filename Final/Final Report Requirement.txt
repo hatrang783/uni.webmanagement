@@ -1,0 +1,15 @@
+Students submit the following materials in soft version before exam date.
+
+(1): Source code: Contain source code of overall project
+(2): Report: Your report about how to do and member workload distributions
+(3): Slide: Summarize your report to present in class
+
+Note: Only group leader is required to submit these documents, no need for other members to submit these documents as well. Link for Group number and your topic is in attachment
+
+Naming convention for submission: 
+
+Group<Number>__Topic.zip
+
+For example: 
+
+Group1_RestaurantIntroduction.zip

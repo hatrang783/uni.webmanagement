@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'FaBrands';
+    /* src: url('./Materials/webfonts/fa-brands-400.ttf'); */
+    src: url('../../Font/fa-brands-400.ttf');
+}
+
+@font-face {
+    font-family: 'FaRegular';
+    src: url('./Materials/webfonts/fa-regular-400.ttf');
+}
+
+@font-face {
+    font-family: 'Ongdo';
+    src: url('../../Font/TMC-Ong\ Do.TTF');
+}
+
+body {
+    /* font-family: 'FaBrands'; */
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    /* font-size: 2vw; */
+    font-size: 32px;
+}
+
+h2 { 
+    /* font-size: 1.5vw; */
+    font-size: 28px;
+}
+
+h3 {
+    /* font-size: 1.5vw; */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    /* font-size: 1.25vw; */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#sticky_spaceship{
+    position: fixed;
+    width: 2%;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+#sticky_spaceship img {
+    width: 100%;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    /* background-image: url(); */
+    /* background-image: url('https://gingermonkey.com.au/cdn/shop/products/Cloudy_Night_SMALL_900x.jpg?v=1538052354'); */ 
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://gingermonkey.com.au/cdn/shop/products/Cloudy_Night_SMALL_900x.jpg?v=1538052354'); */
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://img.pikbest.com/wp/202345/wallpaper-hd-space-galaxy_9593213.jpg!sw800');
+   
+    background-size: 100vw;
+
+    padding: 6% 0;
+}
+
+#header h1{
+    color: white;
+    font-weight: bold;
+    padding: 1%;
+}
+
+#header h2 {
+    color: #f4ec7a;
+    padding: 1%;
+}
+
+#header button {
+    color: white;
+    background-color: transparent; 
+    margin: 3%;
+    padding: 1% 5%;
+}
+#header button:hover {
+    color: yellow;
+    background-color: black; 
+}
+
+.section_padding {
+    padding: 3% 0;
+}
+
+#facts #description {
+    padding-top: 1%;
+    padding-bottom: 10%;
+    color: gray;
+}
+
+#facts_containter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fact {
+    position: relative;
+    width: 24%;
+    Box-shadow: 0px 0px 15px -4px rgba(112, 108, 112, 1);
+    padding: 5% 3%;
+    margin-bottom:5%;
+}
+
+.fact .logo {
+    position: absolute;
+    width: 15%;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    background-color: yellow;
+    padding:5%;
+}
+
+.fact .logo img {
+    width: 100%;
+}
+
+.fact h3 {
+    padding: 15% 0;
+}
+
+#team {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://img.pikbest.com/wp/202345/wallpaper-hd-space-galaxy_9593213.jpg!sw800');
+
+    background-size: 100vw;
+
+    color: white;
+}
+
+#team_desc {
+    padding-top: 1%;
+    padding-bottom: 7%;
+}
+
+#team_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+} 
+
+.teamate {
+    width: 30%;
+    display: flex;
+    /* justify-content: flex-start; */
+    margin-bottom: 5%;
+}
+
+.teamate:first-child {
+    color: yellow;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.teamate:first-child p {
+    margin: 10%;
+}
+
+.teamate .avatar {
+    width: 40%;
+}
+
+.teamate .avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.teamate .info {
+    text-align: left;
+    padding: 10% 5%;
+    background-color: rgba(255, 255, 255, 0.397);
+ }
+
+.teamate:nth-last-child(3) .info {
+    background-image: linear-gradient(to bottom left, rgb(255, 255, 255), rgba(128, 128, 128, 0.3));
+}
+
+.teamate:last-child .info  {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.teamate .info h3{
+    padding-bottom: 10%;
+}
+
+#sayhello form {
+    text-align: left;
+}
+
+#sayhello p {
+    padding: 2% 0;
+}
+
+#sayhello form label {
+    display: block;
+    padding: 1% 0;
+    font-size: 16px;
+}
+
+#sayhello form input, textarea {
+    width: 40%;
+}
+
+#sayhello form button {
+    background-color: black;
+    color: yellow;
+    margin-top: 2%;
+    padding: 1% 5%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top:1%;
+    padding-bottom: 2%;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+footer img{
+    width: 1.5%;
+}
+
+@media (max-width: 400px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    
+    /* .container {
+        max-width: 360px;
+    } */
+
+    #sticky_spaceship{
+        width: 5%;
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+
+    #header button {
+        margin: 3%;
+        padding: 5% 20%;
+    }
+
+    .fact {
+        width: 100%;
+        margin: 10% 0;
+    }
+
+    .fact .logo {
+        border-radius: 10%;
+        padding:2% 10%;
+    }
+
+    .teamate {
+        width: 100%;
+    }
+
+    #sayhello form label {
+        padding: 5% 0;
+    }
+
+    #sayhello form input, textarea {
+        width: 100%;
+    }
+
+    #sayhello form button {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        padding: 3% 8%;
+        border-radius: 5px;
+    }
+
+    footer {
+        padding-top:5%;
+        padding-bottom: 8%;
+    }
+
+    footer img{
+        width: 3%;
+    }
+
+}

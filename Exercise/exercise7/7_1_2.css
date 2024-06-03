@@ -1,0 +1,63 @@
+body {
+    font-family: Verdana; 
+    background-image: url('../../Picture/bg.gif');
+    background-repeat: repeat;
+    /* padding: 15px;  */
+    /* margin: 15px auto; */
+}
+
+nav {
+    background-color: pink; 
+    width: 75%; 
+    padding:15px; 
+    border: 1px solid black; 
+    margin:auto;
+}
+
+nav ul {
+    list-style-type: none; 
+    text-align: center;
+}
+
+nav ul li {
+    border: 1px solid;
+    display: inline;
+    padding: 5px;
+    background-color: yellow;
+}
+nav ul li:hover {
+    background-color: purple;
+}
+nav ul li:hover a{
+    color: pink;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+}
+
+#yellowlogo {
+    background-color: yellow;
+    text-align: center;
+    border: 1px dotted black;
+}
+
+div {
+    background-color: cornsilk;
+    border: 3px dotted black;
+    width: 50%;
+    margin: 15px auto;
+    padding: 15px;
+}
+
+footer {
+    background-color: #0ff;
+    width: 250px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    font-style:italic;
+}

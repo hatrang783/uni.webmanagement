@@ -1,0 +1,46 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+.hero {
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #863ae8;
+    position: relative;
+    color: white;
+}
+
+.hero div {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%); 
+    text-align: center;
+}
+
+.hero h1 {
+    /* width: 75%; */
+    /* margin: 16px 0px; */
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    font-family: Bitter, serif;
+}
+
+.hero p {
+    font-size: 16px;
+    font-family: Mukta;
+    letter-spacing: 0.5px;
+}
+
+.hero hr {
+    width: 50%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.content {
+    padding: 32px;
+}
+

@@ -1,0 +1,139 @@
+body {
+    margin:0px;
+    padding: 0px;
+}
+
+#hero {
+    /* margin: 0 auto; */
+    position: relative;
+    background-color: #863ae8;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+#hero div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hero h1 {
+    width: 75%;
+    margin: 16px auto;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    font-family: Bitter, serif;
+}
+
+#hero p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-family: Mukta;
+}
+
+#hero hr {
+    width: 50%;
+    margin: 32px auto;
+}
+
+#content {
+    padding: 32px 25%;
+    font-family: Mukta;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.head_font {
+    font-family: Bitter,serif;
+    font-weight: 500;
+}
+
+#info {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-family: Bitter,serif;
+}
+
+span {
+    color: #e95400;
+}
+
+#content h2 {
+    letter-spacing: -0.5px;
+    font-size: 50px;
+}
+
+#headline {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+blockquote {
+    border-left: 2px solid #e95400;
+    padding-left: 16px;
+    margin: 32px 0px 32px 32px ;
+    font-size: 14px;
+    font-style: italic;
+}
+
+cite {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#content h3 {
+    font-size: 38px;
+}
+
+#content h4 {
+    font-size: 30px;
+    letter-spacing: 0.25px;
+}
+
+#content h5 {
+    font-size: 24px;
+}
+
+#content h6 {
+    font-size: 16px;
+}
+
+code {
+    color: #e95400;
+    font-weight: bold;
+}
+
+p code {
+    font-size: 18px;
+}
+
+footer {
+    position: absolute;
+    width:100%;
+    background-color: #863ae8;
+    margin-bottom:0px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    padding: 0px 16px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Mukta;
+}
