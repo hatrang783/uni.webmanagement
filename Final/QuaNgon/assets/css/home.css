@@ -1,4 +1,5 @@
 body {
+    width: 100%;
     font-family: "DM Sans", sans-serif;
     color: white;
     background-color: #0E0D0C;
@@ -56,7 +57,9 @@ section#our_strength .section-subtitle::after {
 }
 
 .strengths{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -125,6 +128,7 @@ footer div ul {
 
 footer div ul#social {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
 }
@@ -154,6 +158,7 @@ footer div h3 {
 footer div form {
     margin: 30px auto 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -178,10 +183,29 @@ footer div form button.section-subtitle {
     padding: 0 20px;
 }
 
+footer>p {
+    line-height: 2rem;
+}
+
 footer p a{
     color: #E4C590;
 }
 
 @media screen and (max-width: 450px){
+    .container {
+        max-width: 400px;
+    }
 
+    .strength{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer>div {
+        width:70%;
+    }
+
+    footer div form button.section-subtitle {
+        margin: 20px 0 0;
+    }
 }
