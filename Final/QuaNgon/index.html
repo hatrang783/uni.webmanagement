@@ -15,6 +15,85 @@
     <link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body>
+
+<!-- ------------------------- SERVICES -->
+    <section id="our_service">
+        <!-- <div class="container"> -->
+        <div class="services">
+            <div class="service-label">
+                <p class="section-subtitle">What we provide</p>
+                <h2>Our Services</h2>
+
+                <button class="private-dining" onclick="FuncServices(1)" style="color: #E4C590; border-bottom: 1px solid #E4C590;">Private Dining</button>
+                <button class="main-dining" onclick="FuncServices(2)">Main Dining Room</button>
+                <button class="off-site" onclick="FuncServices(3)">Off-site catering</button>
+
+                <div class="private-dining">
+                    <p>Our private dining room is an exquisite destination for you to gather your loved ones for an intimate meal hidden beneath one of Hanoi's hottest restaurants. Enjoy favorites from our dinner menu, cocktails and bites, or our inventive brunch menu (think everything bagel naan, cardamom waffles, and our take on a burger).</p>
+                    <p>GUEST CAPACITY</p>
+                    <p>Seated: 30ppl max</p>
+                    <p>Standing: 45ppl max</p>
+                </div>
+                <div class="off-site" style="display: none">
+                    <p>Our private dining room is an exquisite destination for you to gather your loved ones for an intimate meal hidden beneath one of Hanoi's hottest restaurants. Enjoy favorites from our dinner menu, cocktails and bites, or our inventive brunch menu (think everything bagel naan, cardamom waffles, and our take on a burger).</p>
+                    <p>GUEST CAPACITY</p>
+                    <p>Seated: 75ppl max</p>
+                    <p>Standing: 100ppl max</p>
+                </div>
+                <div class="main-dining" style="display: none">
+                    <p>Our private dining room is an exquisite destination for you to gather your loved ones for an intimate meal hidden beneath one of Hanoi's hottest restaurants. Enjoy favorites from our dinner menu, cocktails and bites, or our inventive brunch menu (think everything bagel naan, cardamom waffles, and our take on a burger).</p>
+                    <p>GUEST CAPACITY</p>
+                    <p>Seated: 100ppl max</p>
+                    <p>Standing: 125ppl max</p>
+                </div>
+            </div>
+            <div class="service-image">
+                <img class="private-dining" src="assets/images/private_dining.avif">
+                <img class="off-site" style="display: none" src="assets/images/off-site.avif">
+                <img class="main-dining" style="display: none" src="assets/images/main-dining.jpg">
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <script>
+            const pd = document.querySelectorAll(".private-dining")
+            const os = document.querySelectorAll(".off-site")
+            const md = document.querySelectorAll(".main-dining")
+            console.log(pd[0])
+            function FuncServices(s) {
+                pd[2].style.display = "none"
+                pd[1].style.display = "none"
+                os[2].style.display = "none"
+                os[1].style.display = "none"
+                md[2].style.display = "none"
+                md[1].style.display = "none"
+                pd[0].style.color = "#A6A6A6"
+                os[0].style.color = "#A6A6A6"
+                md[0].style.color = "#A6A6A6"
+                pd[0].style.border = "none"
+                os[0].style.border = "none"
+                md[0].style.border = "none"
+                if (s == 1){
+                    pd[2].style.display = "block"
+                    pd[1].style.display = "block"
+                    pd[0].style.color = "#E4C590"
+                    pd[0].style.borderBottom = "1px solid #E4C590"
+                }else if (s == 2) {
+                    md[0].style.color = "#E4C590"
+                    md[2].style.display = "block"
+                    md[1].style.display = "block"
+                    md[0].style.borderBottom = "1px solid #E4C590"          
+                } else {
+                    os[0].style.color = "#E4C590"
+                    os[2].style.display = "block"
+                    os[1].style.display = "block"
+                    os[0].style.borderBottom = "1px solid #E4C590"   
+                }
+            }
+        </script>
+    </section>
+
+<!-- ------------------------- STRENGTHS -->
     <section id="our_strength">
         <div class="container">
             <p class="section-subtitle">Why choose us</p>
@@ -44,16 +123,11 @@
         </div>
     </section>
 
+<!-- ------------------------- FOOTER -->
     <footer>
         <div>
             <div class="footer-sideborder"><img src="assets/images/footer-form-pattern.svg"></div>
             <div class="footer-sideborder"><img src="assets/images/footer-form-pattern.svg"></div>
-            <!-- <img class="footer-sideborder" src="assets/images/footer-form-pattern.svg">
-            <img class="footer-sideborder" src="assets/images/footer-form-pattern.svg"> -->
-            <!-- <div>
-                <img src="assets/images/footer-form-pattern.svg">
-                <img src="assets/images/footer-form-pattern.svg">
-            </div> -->
 
             <img src="assets/images/logo-no-background.png" width="160" height="160" >
             <ul id="contact">
@@ -69,14 +143,6 @@
                 <li><a href="https://www.youtube.com/" target="_target">Youtube</a></li>
                 <li><a href="https://x.com/" target="_target">Twitter</a></li>
             </ul>
-
-            <!-- <p>
-                <a><svg fill="#A6A6A6" height="32px" width="32px" viewBox="0 0 350 350" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" stroke="#A6A6A6"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_834_"> <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064 c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996 V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545 C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703 c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"></path> </g> </g></svg></a>
-                <a><svg fill="#A6A6A6" height="32px" width="32px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" stroke="#A6A6A6"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="social-instagram"> <path d="M23.9,7.1c-0.1-1.3-0.3-2.1-0.6-2.9C23.1,3.4,22.7,2.7,22,2s-1.3-1.1-2.1-1.4c-0.8-0.3-1.6-0.5-2.9-0.6C15.7,0,15.3,0,12,0 S8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.4,0.6,4.1C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12 s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9C0.9,20.6,1.3,21.3,2,22s1.3,1.1,2.1,1.4c0.8,0.3,1.6,0.5,2.9,0.6C8.3,24,8.7,24,12,24 s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.1-1.4s1.1-1.3,1.4-2.1c0.3-0.8,0.5-1.6,0.6-2.9C24,15.7,24,15.3,24,12 S24,8.3,23.9,7.1z M21.8,16.8c-0.1,1.2-0.2,1.8-0.4,2.2c-0.2,0.6-0.5,1-0.9,1.4s-0.8,0.7-1.4,0.9c-0.4,0.2-1.1,0.4-2.2,0.4 c-1.3,0.1-1.6,0.1-4.8,0.1s-3.6,0-4.8-0.1c-1.2-0.1-1.8-0.2-2.2-0.4c-0.6-0.2-1-0.5-1.4-0.9s-0.7-0.8-0.9-1.4 c-0.2-0.4-0.4-1.1-0.4-2.2c-0.1-1.3-0.1-1.6-0.1-4.8s0-3.6,0.1-4.8C2.3,6,2.5,5.3,2.6,4.9c0.2-0.6,0.5-1,0.9-1.4s0.8-0.7,1.4-0.9 C5.3,2.5,6,2.3,7.2,2.2C8.4,2.2,8.8,2.2,12,2.2s3.6,0,4.8,0.1c1.2,0.1,1.8,0.2,2.2,0.4c0.6,0.2,1,0.5,1.4,0.9s0.7,0.8,0.9,1.4 c0.2,0.4,0.4,1.1,0.4,2.2c0.1,1.3,0.1,1.6,0.1,4.8S21.8,15.6,21.8,16.8z"></path> <path d="M12,6c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S15.3,6,12,6z M12,15.9c-2.2,0-3.9-1.7-3.9-3.9S9.8,8.1,12,8.1s3.9,1.7,3.9,3.9 S14.2,15.9,12,15.9z"></path> <circle cx="18.5" cy="6" r="1.5"></circle> </g> </g></svg></a>
-                <a><svg fill="#A6A6A6" height="32px" width="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#A6A6A6"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M29.398 5.928c-0.867-0.624-3.283-1.453-13.406-1.453-10.848 0-12.458 0.952-12.975 1.264-2.749 1.652-3.010 8.963-3.034 10.445 0.033 1.958 0.349 8.473 3.032 10.084 0.515 0.311 2.116 1.257 12.976 1.257 10.13 0 12.543-0.825 13.406-1.447 2.343-1.686 2.612-7.49 2.619-9.92-0.006-1.954-0.211-8.496-2.619-10.23zM28.23 24.456c-0.349 0.251-2.35 1.069-12.239 1.069-9.56 0-11.566-0.742-11.945-0.971-0.965-0.579-1.984-3.652-2.063-8.376 0.079-4.713 1.111-8.153 2.066-8.726 0.38-0.229 2.393-0.977 11.943-0.977 9.881 0 11.887 0.824 12.239 1.076 0.857 0.617 1.773 3.865 1.787 8.613-0.014 4.823-0.936 7.678-1.787 8.291zM22.513 15.213l-8.998-5.522c-0.309-0.187-0.695-0.191-1.008-0.014-0.315 0.178-0.509 0.511-0.509 0.871v11.045c0 0.36 0.194 0.694 0.509 0.871 0.152 0.086 0.322 0.129 0.491 0.129 0.178 0 0.358-0.048 0.516-0.143l8.998-5.524c0.3-0.181 0.483-0.506 0.483-0.856s-0.183-0.676-0.483-0.857zM13.999 19.822v-7.503l6.063 3.751z"></path> </g></svg></a>
-                <a><svg fill="#A6A6A6" height="32px" width="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#A6A6A6"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21.387 4.959c1.652 0 3.144 0.676 4.195 1.762 1.308-0.253 2.54-0.714 3.648-1.352-0.428 1.301-1.34 2.393-2.525 3.083 1.16-0.136 2.27-0.434 3.301-0.88-0.773 1.117-1.745 2.1-2.868 2.886 0.011 0.239 0.017 0.479 0.017 0.719 0 7.366-5.782 15.863-16.354 15.863-3.245 0-6.268-0.926-8.809-2.507 0.449 0.052 0.906 0.079 1.37 0.079 2.692 0 5.172-0.89 7.139-2.387-2.517-0.043-4.641-1.657-5.369-3.87 0.351 0.066 0.711 0.101 1.082 0.101 0.522 0 1.032-0.067 1.512-0.195-2.629-0.511-4.611-2.764-4.611-5.467v-0.072c0.776 0.418 1.661 0.669 2.605 0.698-1.543-1.001-2.558-2.705-2.558-4.64 0-1.022 0.284-1.981 0.779-2.801 2.834 3.371 7.069 5.591 11.847 5.824-0.098-0.407-0.149-0.837-0.149-1.27 0-3.079 2.574-5.575 5.749-5.575zM30.006 7.572v0zM21.387 2.959c-3.927 0-7.18 2.869-7.681 6.576-3.213-0.646-6.135-2.346-8.235-4.842-0.381-0.454-0.942-0.713-1.531-0.713-0.052 0-0.104 0.002-0.157 0.006-0.643 0.052-1.223 0.41-1.556 0.962-0.698 1.157-1.066 2.482-1.066 3.833 0 0.902 0.162 1.779 0.469 2.601-0.327 0.364-0.515 0.839-0.515 1.341v0.072c0 1.959 0.774 3.777 2.061 5.139-0.074 0.343-0.058 0.702 0.055 1.046 0.444 1.349 1.251 2.512 2.298 3.398-0.703 0.157-1.428 0.235-2.169 0.235-0.392 0-0.773-0.021-1.133-0.066-0.080-0.010-0.159-0.014-0.238-0.014-0.84 0-1.603 0.529-1.885 1.337-0.31 0.885 0.034 1.866 0.83 2.361 2.954 1.838 6.366 2.808 9.866 2.808 11.376 0 18.219-8.905 18.352-17.605 0.931-0.771 1.754-1.662 2.451-2.661 0.254-0.334 0.405-0.751 0.405-1.203 0-0.681-0.34-1.282-0.859-1.644 0.224-0.769-0.032-1.603-0.657-2.111-0.365-0.297-0.813-0.448-1.262-0.448-0.344 0-0.689 0.088-0.999 0.268-0.661 0.381-1.368 0.683-2.113 0.9-1.347-1.014-3.017-1.578-4.732-1.578z"></path> </g></svg></a>
-            </p> -->
-
             <img class="separator" src="assets/images/separator.svg">
 
             <h3>Get News & Offers</h3>

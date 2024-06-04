@@ -2,7 +2,7 @@ body {
     width: 100%;
     font-family: "DM Sans", sans-serif;
     color: white;
-    background-color: #0E0D0C;
+    background-color: #161718;
 }
 .container {
     max-width: 1080px;
@@ -49,6 +49,68 @@ p.section-subtitle::after {
     line-height: 1.4rem;
 }
 
+/* ------- OUR SERVICE  */
+section#our_service {
+    background-color: #0E0D0C;
+    padding: 0;
+}
+.services{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-label {
+    padding: 100px 5%;
+    width: 40%;
+    padding-right: 5%;
+    text-align: center;
+}
+section#our_service p.section-subtitle::after {
+    margin-left: calc(50% - 50px);
+    margin-top: 20px;
+}
+
+section#our_service button {
+    background-color: transparent;
+    font-family: "Forum", serif;
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: #A6A6A6;
+    height: 40px;
+    border: none;
+    margin: 0 10px;
+}
+section#our_service button:hover {
+    color: #E4C590;
+    border-bottom: 1px solid #E4C590;
+}
+
+section#our_service .service-label>div {
+    margin-top: 30px;
+}
+
+section#our_service .service-label>div p {
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+section#our_service .service-label>div p:nth-child(2) {
+    font-weight: bold;
+    margin: 20px auto 10px;
+}
+
+.service-image {
+    width: 50%;
+}
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+/* ------- OUR STRENGTH  */
 section#our_strength {
     text-align: center;
 }
@@ -74,6 +136,7 @@ section#our_strength .section-subtitle::after {
     background-color: #121111;
 }
 
+/* ------- FOOTER  */
 footer {
     background-image: url("../images/opacity_background.png");
     background-repeat: no-repeat;
@@ -181,9 +244,23 @@ footer p a{
     color: #E4C590;
 }
 
+/* ------- RESPONSIVE  */
+
+/* tablet view */
 @media screen and (max-width: 800px){
     .container {
         max-width: 90%;
+    }
+    
+    .service-label {
+        padding: 100px 5%;
+        width: 90%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    .service-image {
+        width: 100%;
     }
 
     .strength{
@@ -200,6 +277,7 @@ footer p a{
     }
 }
 
+/* mobile view */
 @media screen and (max-width: 450px){
     .strength{
         width: 100%;
