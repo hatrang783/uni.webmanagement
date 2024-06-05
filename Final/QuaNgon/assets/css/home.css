@@ -127,7 +127,7 @@ section#our_strength .section-subtitle::after {
 
 .strength{
     width: 20%;
-    padding: 30px 20px 40px;
+    padding: 30px 2% 40px;
 }
 .strength:nth-child(odd) {
     background-color: #141515;
@@ -247,7 +247,7 @@ footer p a{
 /* ------- RESPONSIVE  */
 
 /* tablet view */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
     .container {
         max-width: 90%;
     }
@@ -255,8 +255,6 @@ footer p a{
     .service-label {
         padding: 100px 5%;
         width: 90%;
-        padding-right: 5%;
-        text-align: center;
     }
 
     .service-image {
