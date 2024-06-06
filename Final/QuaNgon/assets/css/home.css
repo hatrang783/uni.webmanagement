@@ -85,6 +85,7 @@ section#our_service button {
 section#our_service button:hover {
     color: #E4C590;
     border-bottom: 1px solid #E4C590;
+    cursor: pointer;
 }
 
 section#our_service .service-label>div {
@@ -234,6 +235,10 @@ footer div form button.section-subtitle {
     border: none;
     margin: 0;
     padding: 0 20px;
+}
+
+footer div form button.section-subtitle:hover {
+    cursor: pointer;
 }
 
 footer>p {
