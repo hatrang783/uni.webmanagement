@@ -244,6 +244,21 @@ footer p a{
     color: #E4C590;
 }
 
+/* back-top button */
+a#back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #0E0D0B;
+    background-color: #E4C590;
+    padding: 15px;
+    border-radius: 50%;
+}
+a#back-top:hover {
+    background-color: white;
+    color: #E4C590;
+}
+
 /* ------- RESPONSIVE  */
 
 /* tablet view */
