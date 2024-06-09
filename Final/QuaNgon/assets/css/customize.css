@@ -21,10 +21,13 @@ h2{
     text-align: center;
 }
 h3 {
+    font-size: 32px;
+}
+h4 {
     font-size: 25px;
     margin: 20px 0;
 }
-h4 {
+h5 {
     font-size: 21px;
 }
 
@@ -45,8 +48,6 @@ p.section-subtitle::after {
     content: url(../images/separator.svg);
     display: block;
     width: 100px;
-    /* margin-top: 10px;
-    margin: 10px auto 0; */
     margin: 20px auto;
 }
 
