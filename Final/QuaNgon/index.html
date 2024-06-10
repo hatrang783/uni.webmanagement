@@ -57,7 +57,7 @@
             </ul>
             <div class = "headeritem"><a href="#">FIND A TABLE</a></div>
             <!-- DROP DOWN MENU -->
-            <div class="dropdown-menu"><ion-icon name="menu-outline"></ion-icon>
+            <div class="dropdown-menu"><ion-icon onclick="dropdownMenu()" name="menu-outline"></ion-icon>
                 <div class="dropdown-content">
                 <p><a href="index.html">HOME</a></p>
                 <p><a href="menu.html">MENU</a></p>
@@ -68,7 +68,7 @@
         </div>
     </div>
     <div id = "auto">
-            <p class = "section-subtitle">Amazing & Delicious</p> 
+            <p class = "section-subtitle">Delightful Experience</p> 
             <h1>Where every flavor
                 <br/>tells a story</h1> 
             <p class="description-text">Come with family & feel the joy of mouthwatering food</p>
@@ -163,40 +163,40 @@
         <!-- </div> -->
 
         <script>
-            const pd = document.querySelectorAll(".private-dining")
-            const os = document.querySelectorAll(".off-site")
-            const md = document.querySelectorAll(".main-dining")
-            console.log(pd[0])
-            function FuncServices(s) {
-                pd[2].style.display = "none"
-                pd[1].style.display = "none"
-                os[2].style.display = "none"
-                os[1].style.display = "none"
-                md[2].style.display = "none"
-                md[1].style.display = "none"
-                pd[0].style.color = "#A6A6A6"
-                os[0].style.color = "#A6A6A6"
-                md[0].style.color = "#A6A6A6"
-                pd[0].style.border = "none"
-                os[0].style.border = "none"
-                md[0].style.border = "none"
-                if (s == 1){
-                    pd[2].style.display = "block"
-                    pd[1].style.display = "block"
-                    pd[0].style.color = "#E4C590"
-                    pd[0].style.borderBottom = "1px solid #E4C590"
-                }else if (s == 2) {
-                    md[0].style.color = "#E4C590"
-                    md[2].style.display = "block"
-                    md[1].style.display = "block"
-                    md[0].style.borderBottom = "1px solid #E4C590"          
-                } else {
-                    os[0].style.color = "#E4C590"
-                    os[2].style.display = "block"
-                    os[1].style.display = "block"
-                    os[0].style.borderBottom = "1px solid #E4C590"   
-                }
-            }
+            // const pd = document.querySelectorAll(".private-dining")
+            // const os = document.querySelectorAll(".off-site")
+            // const md = document.querySelectorAll(".main-dining")
+            // console.log(pd[0])
+            // function FuncServices(s) {
+            //     pd[2].style.display = "none"
+            //     pd[1].style.display = "none"
+            //     os[2].style.display = "none"
+            //     os[1].style.display = "none"
+            //     md[2].style.display = "none"
+            //     md[1].style.display = "none"
+            //     pd[0].style.color = "#A6A6A6"
+            //     os[0].style.color = "#A6A6A6"
+            //     md[0].style.color = "#A6A6A6"
+            //     pd[0].style.border = "none"
+            //     os[0].style.border = "none"
+            //     md[0].style.border = "none"
+            //     if (s == 1){
+            //         pd[2].style.display = "block"
+            //         pd[1].style.display = "block"
+            //         pd[0].style.color = "#E4C590"
+            //         pd[0].style.borderBottom = "1px solid #E4C590"
+            //     }else if (s == 2) {
+            //         md[0].style.color = "#E4C590"
+            //         md[2].style.display = "block"
+            //         md[1].style.display = "block"
+            //         md[0].style.borderBottom = "1px solid #E4C590"          
+            //     } else {
+            //         os[0].style.color = "#E4C590"
+            //         os[2].style.display = "block"
+            //         os[1].style.display = "block"
+            //         os[0].style.borderBottom = "1px solid #E4C590"   
+            //     }
+            // }
         </script>
     </section>
 
@@ -358,5 +358,6 @@
     <ion-icon name="chevron-up"></ion-icon>
 </a>
 
+<script src="assets/js/script.js"></script>
 </body>
 </html>

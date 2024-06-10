@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 
+
     <!-- ion icon -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -74,9 +75,9 @@
     <p class="section-subtitle">Special Selection</p>
     <h2>Delicious Menu</h2>
 
-    <button class="main-dishes" onclick="FuncServices(1)" style="color: #E4C590; border-bottom: 1px solid #E4C590;">Main Dishes</button>
-    <button class="beverage" onclick="FuncServices(2)">Beverage</button>
-    <button class="dessert" onclick="FuncServices(3)">Dessert</button>
+    <button class="main-dishes" onclick="FuncMenu(1)" style="color: #E4C590; border-bottom: 1px solid #E4C590;">Main Dishes</button>
+    <button class="beverage" onclick="FuncMenu(2)">Beverage</button>
+    <button class="dessert" onclick="FuncMenu(3)">Dessert</button>
 
     <div class="main-dishes">
         <div class="menu-items">
@@ -298,34 +299,34 @@
 
 
     <script>
-        const md = document.querySelectorAll(".main-dishes")
-        const b = document.querySelectorAll(".beverage")
-        const d = document.querySelectorAll(".dessert")
-        console.log(b[1])
-        function FuncServices(s) {
-            md[0].style.color = "#A6A6A6"
-            b[0].style.color = "#A6A6A6"
-            d[0].style.color = "#A6A6A6"
-            md[0].style.border = "none"
-            b[0].style.border = "none"
-            d[0].style.border = "none"
-            md[1].style.display = "none"
-            b[1].style.display = "none"
-            d[1].style.display = "none"
-            if (s == 1){
-                md[1].style.display = "block"
-                md[0].style.color = "#E4C590"
-                md[0].style.borderBottom = "1px solid #E4C590"
-            }else if (s == 2) {
-                b[1].style.display = "block"
-                b[0].style.color = "#E4C590"
-                b[0].style.borderBottom = "1px solid #E4C590"          
-            } else {
-                d[1].style.display = "block"
-                d[0].style.color = "#E4C590"
-                d[0].style.borderBottom = "1px solid #E4C590"   
-            }
-        }
+        // const md = document.querySelectorAll(".main-dishes")
+        // const b = document.querySelectorAll(".beverage")
+        // const d = document.querySelectorAll(".dessert")
+        // console.log(b[1])
+        // function FuncServices(s) {
+        //     md[0].style.color = "#A6A6A6"
+        //     b[0].style.color = "#A6A6A6"
+        //     d[0].style.color = "#A6A6A6"
+        //     md[0].style.border = "none"
+        //     b[0].style.border = "none"
+        //     d[0].style.border = "none"
+        //     md[1].style.display = "none"
+        //     b[1].style.display = "none"
+        //     d[1].style.display = "none"
+        //     if (s == 1){
+        //         md[1].style.display = "block"
+        //         md[0].style.color = "#E4C590"
+        //         md[0].style.borderBottom = "1px solid #E4C590"
+        //     }else if (s == 2) {
+        //         b[1].style.display = "block"
+        //         b[0].style.color = "#E4C590"
+        //         b[0].style.borderBottom = "1px solid #E4C590"          
+        //     } else {
+        //         d[1].style.display = "block"
+        //         d[0].style.color = "#E4C590"
+        //         d[0].style.borderBottom = "1px solid #E4C590"   
+        //     }
+        // }
     </script>
 
 </section>
@@ -371,5 +372,7 @@
 <ion-icon name="chevron-up"></ion-icon>
 </a>
 
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
