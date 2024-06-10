@@ -55,12 +55,6 @@ section#top-notch .section-text {
     letter-spacing: 0.1rem;
 }
 
-section#top-notch .tops{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 section#top-notch .top {
     width: 25%;
     margin-top: 40px;
@@ -125,12 +119,7 @@ section#our_service {
     background-color: #0E0D0C;
     padding: 0;
 }
-.services{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+
 .service-label {
     padding: 100px 5%;
     width: 40%;
@@ -186,13 +175,11 @@ section#our_service .service-label>div p:nth-child(2) {
 /* ------- RESERVATION  */
 section#reservation  {
     padding-bottom: 0;
+    text-align: center;
 }
 
 section#reservation .container {
-    display: flex;
-    flex-wrap: wrap;
     background-color: black;
-    text-align: center;
 }
 
 section#reservation .container>div {
@@ -284,15 +271,7 @@ section#reservation .form form button {
     margin-top: 20px;
     width: 100%;
     padding: 15px;
-    border: none;
     border-radius: 5px;
-    background-color: #E4C590;
-    color: #111;
-    font-size: 12px;
-    letter-spacing: 0.2rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
 section#reservation .contact .contact-label {
@@ -322,13 +301,6 @@ section#our_strength {
     text-align: center;
 }
 
-.strengths{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .strength{
     width: 20%;
     padding: 30px 2% 40px;
@@ -356,7 +328,7 @@ section#our_strength {
         display: block;
     }
     
-    section#top-notch .tops {
+    section#top-notch .flex-container {
         justify-content: center;
     }
     
@@ -390,7 +362,7 @@ section#our_strength {
 }
 
 /* mobile view */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     
     h1 {
         font-size: 10vw;

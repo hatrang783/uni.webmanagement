@@ -42,14 +42,12 @@ footer div ul {
     margin: 20px 0 0px;
 }
 
-footer div ul#social {
-    display: flex;
-    flex-wrap: wrap;
+footer div ul.flex-container {
     justify-content: center;
     margin-bottom: 20px;
 }
 
-footer div ul#social li{
+footer div ul.flex-container li{
     padding: 0 20px;
 }
 
@@ -71,10 +69,8 @@ footer div h3 {
     margin: 20px 0 10px;
 }
 
-footer div form {
+footer div form.flex-container {
     margin: 30px auto 0;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -90,17 +86,10 @@ footer div form input {
     color: white;
 }
 
-footer div form button.section-subtitle {
+footer div form button.btn {
     width: 160px;
-    background-color: #E4C590;
-    color: black;
-    border: none;
     margin: 0;
     padding: 0 20px;
-}
-
-footer div form button.section-subtitle:hover {
-    cursor: pointer;
 }
 
 footer>p {
@@ -135,12 +124,12 @@ a#back-top:hover {
         width:70%;
     }
 
-    footer div form button.section-subtitle {
+    footer div form button.btn {
         margin: 20px 0 0;
     }
 }
 
 /* mobile view */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     
 }

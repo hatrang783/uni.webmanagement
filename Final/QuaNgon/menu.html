@@ -23,7 +23,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         
 </head>
-<body >
+<body id="top">
 
     <div id = "topbar">
         <div class = "headcontainer">
@@ -55,7 +55,7 @@
                 <li><a href="menu.html" style="color:#E4C590">MENU</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
             </ul>
-            <div class = "headeritem"><a href="#">FIND A TABLE</a></div>
+            <div class = "headeritem"><a href="index.html#reservation" class="btn">FIND A TABLE</a></div>
             <!-- DROP DOWN MENU -->
             <div class="dropdown-menu"><ion-icon name="menu-outline"></ion-icon>
                 <div class="dropdown-content">
@@ -80,7 +80,7 @@
     <button class="dessert" onclick="FuncMenu(3)">Dessert</button>
 
     <div class="main-dishes">
-        <div class="menu-items">
+        <div class="flex-container">
             <div class="menu-item">
                 <div><img src="assets/images/menu-1.png" width="100" height="100"></div>
                 <div class="info">
@@ -152,7 +152,7 @@
     </div>
 
     <div class="beverage" style="display: none;">
-        <div class="menu-items">
+        <div class="flex-container">
             <div class="menu-item">
                 <div><img src="assets/images/beverage1.png" width="100" height="100"></div>
                 <div class="info">
@@ -224,7 +224,7 @@
     </div>
 
     <div class="dessert" style="display: none">
-        <div class="menu-items">
+        <div class="flex-container">
             <div class="menu-item">
                 <div><img src="assets/images/menu-1.png" width="100" height="100"></div>
                 <div class="info">
@@ -296,39 +296,50 @@
     </div>
 
 </div>
+</section>
 
+<!-- Upcoming Dishes -->
+<section id="upcoming" aria-label="event">
+    <div class="container">
+        <p class="section-subtitle">Recent Updates</p>
+        <h2>Upcoming Menu</h2>
 
-    <script>
-        // const md = document.querySelectorAll(".main-dishes")
-        // const b = document.querySelectorAll(".beverage")
-        // const d = document.querySelectorAll(".dessert")
-        // console.log(b[1])
-        // function FuncServices(s) {
-        //     md[0].style.color = "#A6A6A6"
-        //     b[0].style.color = "#A6A6A6"
-        //     d[0].style.color = "#A6A6A6"
-        //     md[0].style.border = "none"
-        //     b[0].style.border = "none"
-        //     d[0].style.border = "none"
-        //     md[1].style.display = "none"
-        //     b[1].style.display = "none"
-        //     d[1].style.display = "none"
-        //     if (s == 1){
-        //         md[1].style.display = "block"
-        //         md[0].style.color = "#E4C590"
-        //         md[0].style.borderBottom = "1px solid #E4C590"
-        //     }else if (s == 2) {
-        //         b[1].style.display = "block"
-        //         b[0].style.color = "#E4C590"
-        //         b[0].style.borderBottom = "1px solid #E4C590"          
-        //     } else {
-        //         d[1].style.display = "block"
-        //         d[0].style.color = "#E4C590"
-        //         d[0].style.borderBottom = "1px solid #E4C590"   
-        //     }
-        // }
-    </script>
-
+        <div class="flex-container">
+            <div class="event-card">
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                    <img src="assets/images/upcoming (1).jpg" width="350" height="450" loading="lazy" alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+                    <time class="publish-date" datetime="2024-06-30">30/06/2024</time>
+                </div>
+                <div class="card-content">
+                    <h4>Bun Met</h4>
+                    <p class="card-subtitle">Vermicelli mixed with tripe, sausage, fried shrimp, sausage and boiled meat</p>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                    <img src="assets/images/upcoming (2).jpg" width="350" height="450" loading="lazy" alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+                    <time class="publish-date" datetime="2024-07-10">10/07/2024</time>
+                </div>
+                <div class="card-content">
+                    <h4>Pho Ga</h4>
+                    <p class="card-subtitle">Pho noodles cooked with chicken thighs mixed with delicious broth</p>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                    <img src="assets/images/upcoming (3).jpg" width="350" height="450" loading="lazy" alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+                    <time class="publish-date" datetime="2024-07-15">15/07/2024</time>
+                </div>
+                <div class="card-content">
+                    <h4>Goi Cuon</h4>
+                    <p class="card-subtitle">Shrimp and meat spring rolls with special dipping sauce</p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
 </section>
 
 <!-- ------------------------- FOOTER -->
@@ -338,14 +349,14 @@
         <div class="footer-sideborder"><img src="assets/images/footer-form-pattern.svg"></div>
 
         <img src="assets/images/logo-no-background.png" width="200" height="160" >
-        <ul id="contact">
+        <ul>
             <li><a href="https://maps.app.goo.gl/VPMYCTNjS3i99JoS8" target="_target">1 Trinh Van Bo, Nam Tu Liem, Hanoi, Vietnam</a></li>
             <li><a href="mailto:booking@quangon.com">booking@quangon.com</a></li>
             <li><a href="tel: 0349842598">Booking Request : 0349-842-598</a></li>
             <li>Open : 09:00 am - 01:00 pm</li>
         </ul>
 
-        <ul id="social">
+        <ul class="flex-container">
             <li><a href="https://www.facebook.com/" target="_target">Facebook</a></li>
             <li><a href="https://www.instagram.com/" target="_target">Instagram</a></li>
             <li><a href="https://www.youtube.com/" target="_target">Youtube</a></li>
@@ -357,7 +368,7 @@
         <p class="font-description">Subscribe us & Get 25% Off.</p>
         <form>
             <input type="email" name="email_address" placeholder="Your email">
-            <button class="section-subtitle">Subcribe</button>
+            <button class="btn">Subcribe</button>
         </form>
     </div>
 

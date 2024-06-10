@@ -56,3 +56,42 @@ p.section-subtitle::after {
     color: #A6A6A6;
     line-height: 1.4rem;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: #E4C590;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    border: none;
+}
+.btn:hover {
+    background-color: #0e0d0c;
+    color: white;
+    border: 1.5px solid #E4C590;
+    cursor: pointer
+}
+
+
+/* back-top button */
+a#back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #0E0D0B;
+    background-color: #E4C590;
+    padding: 15px;
+    border-radius: 50%;
+}
+a#back-top:hover {
+    background-color: white;
+    color: #E4C590;
+}
