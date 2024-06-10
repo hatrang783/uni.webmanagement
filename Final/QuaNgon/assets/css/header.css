@@ -84,9 +84,9 @@ ul.headeritem li{
     z-index: 1;
 }
 
-.dropdown-menu:hover .dropdown-content {
+/* .dropdown-menu:hover .dropdown-content {
     display: block;
-}
+} */
 
 .dropdown-content p a {
     text-decoration: none;
