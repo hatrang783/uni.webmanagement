@@ -14,15 +14,62 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/customize.css">
     <link rel="stylesheet" href="assets/css/menu.css">
-</head>
-<body >
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
     <!-- ion icon -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+        
+</head>
+<body >
+
+    <div id = "topbar">
+        <div class = "headcontainer">
+            <div class = "topbar-items">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                <p> 1 Trinh Van Bo, Nam Tu Liem, Ha noi</p>
+            </div>
+            <div class = "topbar-items">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                <p> Daily: 9:00 am to 10:00 pm</p>
+            </div>
+            <div class = "topbar-items">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                <p> 0345686868</p>
+            </div>
+            <div class = "topbar-items">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                <p>booking@ngonqua.com</p>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <div class = "headcontainer">
+            <div class = "headeritem">
+                <img src="assets/images/logo-no-background.png" height="80" >
+            </div>
+            <ul class = "headeritem">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html" style="color:#E4C590">MENU</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+            <div class = "headeritem"><a href="#">FIND A TABLE</a></div>
+            <!-- DROP DOWN MENU -->
+            <div class="dropdown-menu"><ion-icon name="menu-outline"></ion-icon>
+                <div class="dropdown-content">
+                <p><a href="index.html">HOME</a></p>
+                <p><a href="menu.html">MENU</a></p>
+                <p><a href="about.html">ABOUT US</a></p>
+                <p><a href="#reservation">CONTACT</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <section id="menu">
 <div class="container">
-    <img src="assets/images/shape-5.png" alt="" class="shape" width="921" height="1036">
+    <img src="assets/images/shape-5.png" alt="" class="shape" width="100%" height="100%">
 
     <p class="section-subtitle">Special Selection</p>
     <h2>Delicious Menu</h2>

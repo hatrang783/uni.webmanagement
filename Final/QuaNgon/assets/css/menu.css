@@ -1,11 +1,6 @@
-/* body {
-    position: relative;
-    overflow: hidden;
-    z-index: -2;
-} */
-
 section#menu {
     text-align: center;
+    padding-top: 0px;
 }
 
 .shape{
@@ -101,117 +96,6 @@ section#menu button:hover {
     text-align: left;
 }
 
-/* ------- FOOTER  */
-footer {
-    background-image: url("../images/opacity_background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding: 100px 0;
-}
-
-footer>div {
-    position: relative;
-    background-image: url("../images/footer-form-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 600px;
-    margin: 0 auto;
-    background-color: #0E0D0B;
-    padding: 50px 40px 100px;
-    margin-bottom: 70px;
-}
-
-footer div .footer-sideborder {
-    position: absolute;
-    width: 15px;
-    height: 100%;
-    top: 0;
-}
-footer div .footer-sideborder:nth-child(1) {
-    left: 0;
-}
-footer div .footer-sideborder:nth-child(2) {
-    right: 0;
-    transform: scaleX(-1);
-}
-
-footer div .footer-sideborder img {
-    height: 100%;
-}
-
-footer div ul {
-    margin: 20px 0 0px;
-}
-
-footer div ul#social {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-footer div ul#social li{
-    padding: 0 20px;
-}
-
-footer div ul li, li a{
-    color: #A6A6A6;
-    line-height: 2rem;
-    text-decoration: none;
-}
-footer div ul li a:hover {
-    color:#E4C590;
-}
-
-footer div .separator {
-    height: 15px;
-}
-
-footer div h3 {
-    font-size: 32px;
-    margin: 20px 0 10px;
-}
-
-footer div form {
-    margin: 30px auto 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-footer div form input, button {
-    height: 56px;
-}
-
-footer div form input {
-    width: 380px;
-    background-color: #1b1c1d;
-    border: none;
-    padding: 0 0 0 20px;
-    color: white;
-}
-
-footer div form button.section-subtitle {
-    width: 160px;
-    background-color: #E4C590;
-    color: black;
-    border: none;
-    margin: 0;
-    padding: 0 20px;
-}
-
-footer div form button.section-subtitle:hover {
-    cursor: pointer;
-}
-
-footer>p {
-    line-height: 2rem;
-}
-
-footer p a{
-    color: #E4C590;
-}
 
 /* back-top button */
 a#back-top {
@@ -226,4 +110,23 @@ a#back-top {
 a#back-top:hover {
     background-color: white;
     color: #E4C590;
+}
+
+/* ------- RESPONSIVE  */
+
+/* tablet view */
+@media screen and (max-width: 1000px){
+    .container {
+        max-width: 90%;
+    }
+    
+    .menu-item{
+        width: 100%;
+    }
+}
+
+/* mobile view */
+@media screen and (max-width: 450px){
+
+    
 }
