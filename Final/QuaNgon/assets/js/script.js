@@ -65,7 +65,7 @@ function FuncMenu(s) {
 
 // DROPDOWN MENU
 function dropdownMenu() {
-    var x = document.querySelectorAll(".dropdown-content")
+    var x = document.querySelector(".dropdown-content")
     if (x.style.display == "block") {
         x.style.display = "none"
     } else {
