@@ -66,5 +66,9 @@ function FuncMenu(s) {
 // DROPDOWN MENU
 function dropdownMenu() {
     var x = document.querySelectorAll(".dropdown-content")
-    x.style.display = "block"
+    if (x.style.display == "block") {
+        x.style.display == "none"
+    } else {
+        x.style.display == "block"
+    }
 }
