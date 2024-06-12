@@ -148,5 +148,8 @@ section#team .chef p{
 /* mobile view */
 @media screen and (max-width: 500px){
     
+    section#team .chef {
+        width: 100%;
+    }
 
 }
