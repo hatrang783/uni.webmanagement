@@ -98,7 +98,7 @@ section#team {
 section#team .chef {
     width: 20%;
     text-align: center;
-    margin: 20px 0;
+    margin: 0 0 20px;
     min-height: 600px;
 }
 
