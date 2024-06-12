@@ -1,0 +1,152 @@
+section#story {
+    padding-top: 60px;
+    text-align: center;
+}
+
+div#story-text {
+    width: 40%;
+}
+
+div#story-text .section-text {
+    line-height: 1.4rem;
+}
+
+div#story-text .contact-label {
+    font-weight: bold;
+    margin: 40px auto 20px;
+}
+
+div#story-text .contact-number {
+    display: block;;
+    font-size: 20px;
+    text-decoration: none;
+    color: #E4C590;
+    margin-bottom: 40px;
+}
+
+div#story-text a.btn {
+    padding: 12px 45px;
+}
+/* 
+div#story-imgs{
+    width: 40%;
+    min-height: 400px;
+    background-image: url("../images/abs1.jpg");
+    background-size: cover;
+    position: relative;;
+}
+
+div#story-imgs img{
+    width: 100%;
+}
+
+div#story-imgs div{
+    position: absolute;
+}
+
+div#story-imgs #img1 {
+    width: 50%;
+    bottom: -50px;
+    left: -80px;
+}
+
+div#story-imgs #img2 {
+    width: 25%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+
+div#story-imgs{
+    width: 50%;
+    position: relative;
+}
+
+div#story-imgs img{
+    width: 100%;
+}
+
+div#story-imgs #img3 {
+    position: absolute;
+    width: 80%;
+    top: 0;
+    right: 0;
+}
+
+div#story-imgs #img1 {
+    position: absolute;
+    width: 40%;
+    bottom: 0;
+    left: 0;
+}
+
+div#story-imgs #img2 {
+    position: absolute;
+    width: 20%;
+    top: 0;
+    right: 40%;
+    transform: translate(50%, -50%);
+}
+
+/* ========= OUR TEAM */
+
+section#team {
+    background-color:#0E0D0B;
+}
+
+section#team .chef {
+    width: 20%;
+    text-align: center;
+    margin: 20px 0;
+    min-height: 600px;
+}
+
+section#team .chef .ava {
+    width: 80%;
+    border-radius: 50%;
+    padding: 2%;
+    border: 1px solid #E4C590;
+    margin: auto;
+}
+
+section#team .chef img{
+    width: 100%;
+}
+
+section#team .chef p{
+    color: #E4C590;
+}
+
+
+/* ------- RESPONSIVE  */
+
+/* tablet view */
+@media screen and (max-width: 1000px){
+    .container {
+        max-width: 90%;
+    }
+
+    /* section#team .flex-container {
+        flex-direction: column;
+    } */
+        
+    section#team .chef {
+        width: 40%;
+    }
+    
+    div#story-text, div#story-imgs {
+        width: 100%;
+    }
+
+    div#story-imgs {
+        display:none;
+    }
+ 
+}
+
+/* mobile view */
+@media screen and (max-width: 500px){
+    
+
+}
