@@ -43,6 +43,7 @@ section {
     font-weight: 600;
     margin: 0 0 12px;
     text-align: center;
+    line-height: 1.2rem;
 }
 p.section-subtitle::after {
     content: url(../images/separator.svg);
