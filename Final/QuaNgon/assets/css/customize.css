@@ -81,6 +81,27 @@ p.section-subtitle::after {
     cursor: pointer
 }
 
+.switch-button {
+    background-color: transparent;
+    font-family: "Forum", serif;
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: #A6A6A6;
+    height: 40px;
+    border: none;
+    margin: 0 10px;
+}
+.switch-button:hover {
+    color: #E4C590;
+    border-bottom: 1px solid #E4C590;
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+	display: none;
+	-webkit-appearance: none;
+}
 
 /* back-top button */
 a#back-top {

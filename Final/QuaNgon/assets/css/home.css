@@ -126,12 +126,13 @@ section#our_service {
     padding-right: 5%;
     text-align: center;
 }
+
 section#our_service p.section-subtitle::after {
     margin-left: calc(50% - 50px);
     margin-top: 20px;
 }
 
-section#our_service button {
+/* section#our_service button {
     background-color: transparent;
     font-family: "Forum", serif;
     font-size: 16px;
@@ -146,18 +147,18 @@ section#our_service button:hover {
     color: #E4C590;
     border-bottom: 1px solid #E4C590;
     cursor: pointer;
-}
+} */
 
-section#our_service .service-label>div {
+section#our_service .service-label div {
     margin-top: 30px;
 }
 
-section#our_service .service-label>div p {
+section#our_service .service-label div p {
     line-height: 1.4rem;
     text-align: center;
 }
 
-section#our_service .service-label>div p:nth-child(2) {
+section#our_service .service-label div p:nth-child(2) {
     font-weight: bold;
     margin: 20px auto 10px;
 }

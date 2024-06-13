@@ -10,23 +10,6 @@ section#menu {
     left: 0%;
 }
 
-section#menu button {
-    background-color: transparent;
-    font-family: "Forum", serif;
-    font-size: 16px;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    color: #A6A6A6;
-    height: 40px;
-    border: none;
-    margin: 0 10px;
-}
-section#menu button:hover {
-    color: #E4C590;
-    border-bottom: 1px solid #E4C590;
-    cursor: pointer;
-}
-
 .menu-item{
     display: flex;
     justify-content: space-between;
