@@ -1,0 +1,12 @@
+
+
+@media screen and (max-width: 1000px){    
+    .service-label {
+        padding: 100px 5%;
+        width: 90%;
+    }
+
+    .service-image {
+        width: 100%;
+    }
+}

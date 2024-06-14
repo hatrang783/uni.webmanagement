@@ -299,10 +299,6 @@ section#our_strength {
         max-width: 90%;
     }
 
-    div#topbar, .headeritem:nth-child(2), .headeritem:nth-child(3) {
-        display: none;
-    }
-
     .dropdown-menu {
         display: block;
     }

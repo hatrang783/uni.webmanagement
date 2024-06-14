@@ -2,7 +2,7 @@
 const pd = document.querySelectorAll(".private-dining")
 const os = document.querySelectorAll(".off-site")
 const md = document.querySelectorAll(".main-dining")
-console.log(pd[0])
+
 function FuncServices(s) {
     pd[2].style.display = "none"
     pd[1].style.display = "none"
@@ -16,6 +16,7 @@ function FuncServices(s) {
     pd[0].style.border = "none"
     os[0].style.border = "none"
     md[0].style.border = "none"
+    
     if (s == 1){
         pd[2].style.display = "block"
         pd[1].style.display = "block"

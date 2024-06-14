@@ -110,10 +110,6 @@ a#back-top {
     padding: 15px;
     border-radius: 50%;
 }
-a#back-top:hover {
-    background-color: white;
-    color: #E4C590;
-}
 
 /* ------- RESPONSIVE  */
 
