@@ -298,10 +298,6 @@ section#our_strength {
     .container {
         max-width: 90%;
     }
-
-    .dropdown-menu {
-        display: block;
-    }
     
     section#top-notch .flex-container {
         justify-content: center;
@@ -351,6 +347,7 @@ section#our_strength {
         font-size: 2vw;
         padding: 5%;
     }
+    
     section#top-notch .top {
         padding: 0 !important;
         width: 100%;
